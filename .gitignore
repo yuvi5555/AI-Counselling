@@ -1,23 +1,135 @@
+# ==============================
 # Python
+# ==============================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.env
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+*.so
 
-# Virtual environments
+# Python virtual environments
 venv/
 env/
+ENV/
+.venv/
 
-# OS files
-.DS_Store
-Thumbs.db
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
 
+# ==============================
+# Machine Learning Models
+# ==============================
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.model
+*.ckpt
+
+# ==============================
+# Embeddings / Vector DB
+# ==============================
+*.index
+*.faiss
+*.ann
+*.vec
+
+# ==============================
+# Large datasets
+# ==============================
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+
+# Keep small example datasets if needed
+!example_data/
+
+# ==============================
 # Logs
+# ==============================
+logs/
 *.log
 
-# IDE files
+# ==============================
+# Temporary files
+# ==============================
+tmp/
+temp/
+*.tmp
+*.swp
+*.bak
+
+# ==============================
+# Build / distribution
+# ==============================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# IDE
+# ==============================
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==============================
+# Environment variables
+# ==============================
+.env
+.env.*
+config.yaml
+secrets.yaml
+
+# ==============================
+# Cache
+# ==============================
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# ==============================
+# Streamlit / FastAPI cache
+# ==============================
+.streamlit/
+
+# ==============================
+# Docker
+# ==============================
+*.tar
+
+# ==============================
+# Colab
+# ==============================
+content/
+
+# ==============================
+# RAG vector database files
+# ==============================
+rag_index/
+vector_store/
+faiss_index/
+
+# ==============================
+# Generated outputs
+# ==============================
+outputs/
+results/
+predictions/
